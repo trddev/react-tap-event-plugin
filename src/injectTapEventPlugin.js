@@ -22,6 +22,4 @@ class Injector {
 }
 const injector = new Injector();
 
-module.exports = {
-  injectTapEventPlugin: injector.injectTapEventPlugin.bind(injector),
-};
+module.exports = injector.injectTapEventPlugin.bind(injector);
